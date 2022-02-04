@@ -6,5 +6,5 @@ export const withTheme:ThemeMiddleware = (element)=>{
   if(typeof themeName === 'string'){
     element.classList.add(themeName);
   }
-  return element as any;
+  return element as never;
 }
